@@ -58,7 +58,7 @@ export INCLUDE	:=	$(foreach dir,$(INCLUDES),-I $(CURDIR)/$(dir) ) \
 					$(foreach dir,$(LIBDIRS),-I $(dir)/include) \
 					-I $(CURDIR)/$(BUILD)
 
-export LIBPATHS	:=	$(foreach dir,$(LIBDIRS),-L $(dir)/lib)
+export LIBPATHS	:=	$(foreach dir,$(LIBDIRS),-L $(dir)/Lib)
 
 .PHONY: $(BUILD) clean all
 
@@ -98,7 +98,7 @@ $(OUTPUT).3gx : $(OFILES)
 %.3gx: %.elf
 	@echo creating $(notdir $@)
 	@$(OBJCOPY) -O binary $(OUTPUT).elf $(TOPDIR)/objdump -S
-	@3gxtool.exe -s $(TOPDIR)/objdump $(TOPDIR)/$(PLGINFO) $@
+	@3gxtool -s $(TOPDIR)/objdump $(TOPDIR)/$(PLGINFO) $@
 	@- rm $(TOPDIR)/objdump
 
 -include $(DEPENDS)
