@@ -3,7 +3,7 @@ A blank CTRPF plugin to be used by [Luma3DS with plugin loader](https://github.c
 
 A list of [all the code types supported by the ActionReplay is available here](https://gist.github.com/Nanquitas/d6c920a59c757cf7917c2bffa76de860).
 
-Join the discord for help: https://discord.gg/5M63VCD
+Join the discord for help: https://discord.gg/z4ZMh27
 ## Action Replay Usage
 
 [![Click to play on YouTube](https://img.youtube.com/vi/c2258P9wKkA/0.jpg)](https://www.youtube.com/watch?v=c2258P9wKkA)
